@@ -2,34 +2,59 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>萌萌的个人网站</title>
     <link rel="stylesheet" href="personal.css"/>
     <!--<script src="personal.js"></script>-->
 </head>
 <body>
 <header>
+    <div id="fixed"></div>
     <div id="back">
         <div id="nav">
+            <div class="aa" id="aa"></div>
+            <div class="aa" id="bb"></div>
+            <div class="aa" id="cc"></div>
+            <div class="aa" id="dd"></div>
+            <div class="aa" id="ee"></div>
+            <div class="aa" id="ff"></div>
+            <div class="aa" id="gg"></div>
             <ul id="fix">
-                <li>contact</li>
-                <li>production</li>
-                <li>my honor</li>
-                <li>about me</li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#production">production</a></li>
+                <li><a href="#introduce">my honor</a></li>
+                <li><a href="#about">about me</a></li>
             </ul>
             <p id="word">I AM Li HUIMENG!</p>
         </div>
     </div>
+    <div id="about">
+        <div class="head"><p>ABOUT ME</p></div>
+        <div id="terrible">
+            <div> <img src="4.jpg" alt=""/></div>
+            <ul id="nav1">
+                <li>姓名：李卉萌</li>
+                <li>生日：1997.03.20</li>
+                <li>年龄：20</li>
+                <li>星座：双鱼座</li>
+                <li>兴趣爱好：性格开朗，平时喜欢看书，喜欢看电影，喜欢游泳</li>
+            </ul>
+        </div>
+
+    </div>
     <div id="introduce">
         <div class="head"><p>MY HONOR</p></div>
         <div class="honor"> <span class="first">本科一年级</span>
-            <p>在大一时我荣获了学校的二等奖学金，我还参加了青年志愿者协会，并且跟随协会去看望了孤寡老人与残障儿童，这使我受益匪浅，
-                此外，我还参加了学校的啦啦队，在全校的啦啦操比赛中我们荣获了第三名的好成绩</p>
+            <p>在大一时我荣获了学院的二等奖学金，还参加了青年志愿者协会，并且跟随协会去看望了孤寡老人与残障儿童，这使我受益匪浅，
+                此外，我还参加了学校的啦啦队，在全校的啦啦操比赛中我们荣获了第三名的好成绩。</p>
         </div>
         <div  class="honor"> <span class="first">本科二年级</span>
-            <p>在大二时我荣获了学校的二等奖学金，并在学校组织的acm大赛中获得了二等奖，我在假期的时候还跟随青年者愿者协会下乡支教</p>
+            <p>在大二时我荣获了学校的二等奖学金并成为了软件特长班的成员，此外，在学校组织的acm大赛中获得了二等奖，我在假期的时候还跟随青年者愿者协会进行了为期一周的下乡支教生活，
+                很累但是很充实。</p>
         </div>
         <div  class="honor"> <span class="first">本科三年级</span>
-            <p></p>
+            <p>正在进行中</p>
         </div>
         <!--<div class="head"><p>MY PRODUCTION</p></div-->
     </div>
@@ -39,7 +64,7 @@
             <a href="xuanzhuanlifangti.html">旋转立方体</a>
         </div>
         <div class="pro">
-            <a href="zhaopianiang.html">照片墙</a>
+            <a href="zhaopianqiang.html">照片墙</a>
         </div>
 
         <div class="pro">
@@ -58,7 +83,7 @@
             <a href="wufenggundong.html">无缝滚动</a>
         </div>
         <div class="pro">
-            <a href="xiaocandan.html">小菜单</a>
+            <a href="xiaocaidan.html">小菜单</a>
         </div>
     </div>
     <div id="contact">
@@ -70,6 +95,147 @@
             <button>提交</button>
         </div>
     </div>
+    <div id="top"><img src="201.gif" alt=""/></div>
+    <script>
+        var num=0;
+        var bA=document.getElementById("aa");
+        var bA1=document.getElementById("bb");
+        var bA2=document.getElementById("cc");
+        var bA3=document.getElementById("dd");
+        var bA4=document.getElementById("ee");
+        var bA5=document.getElementById("ff");
+        var bA6=document.getElementById("gg");
+        var timer= setInterval(function(){
+            num=Math.random()*10;
+            var num1=Math.floor(num);
+            console.log(num1);
+            switch(num1){
+                case 1:
+                case 2:
+                    bA.style.left=bA.offsetLeft+40+"px";
+                    if(bA.style.left>="800px"){
+                        bA.style.left="0px";}
+
+                    bA1.style.left=bA1.offsetLeft+20+"px";
+                    if(bA1.style.left>="700px"){
+                        bA1.style.left="400px";}
+
+                    bA2.style.left=bA2.offsetLeft+30+"px";
+                    if(bA2.style.left<="100px"){
+                        bA2.style.left="500px";}
+                    bA3.style.left=bA3.offsetLeft+50+"px";
+                    if(bA3.style.left>="1000px"){
+                        bA3.style.left="900px";}
+                    bA4.style.left=bA4.offsetLeft+40+"px";
+                    if(bA4.style.left<="10px"){
+                        bA4.style.left="1010px";}
+                    bA5.style.left=bA5.offsetLeft+60+"px";
+                    if(bA5.style.left>="720px"){
+                        bA5.style.left="100px";}
+                    bA6.style.left=bA6.offsetLeft+90+"px";
+                    if(bA6.style.left<="100px"){
+                        bA6.style.left="800px";}
+                    break;
+                case 3:
+                case 4:
+                case 7:
+                    bA.style.top=bA.offsetTop+80+"px";
+                    if(bA.style.top<="100px"){
+                        bA.style.top="400px";
+                    }
+                    bA1.style.top=bA1.offsetTop+70+"px";
+                    if(bA1.style.top>="490px"){
+                        bA1.style.top="200px";
+                    }
+                    bA2.style.top=bA2.offsetTop+60+"px";
+                    if(bA2.style.top<="320px"){
+                        bA2.style.top="500px";
+                    }
+                    bA3.style.top=bA3.offsetTop+50+"px";
+                    if(bA3.style.top>="500px"){
+                        bA3.style.top="400px";
+                    } bA4.style.top=bA4.offsetTop+30+"px";
+                    if(bA4.style.top<="110px"){
+                        bA4.style.top="450px";
+                    }
+                    bA5.style.top=bA5.offsetTop+20+"px";
+                    if(bA5.style.top>="500px"){
+                        bA5.style.top="400px";
+                    }
+                    bA6.style.top=bA6.offsetTop+10+"px";
+                    if(bA6.style.top<="120px") {
+                        bA6.style.top = "500px";
+                    }
+                    break;
+                case 5:
+                case 6:
+                    bA.style.left=bA.offsetLeft-50+"px";
+                    if(bA.style.left<="100px"){
+                        bA.style.left="1000px";}
+                    bA1.style.left=bA1.offsetLeft-20+"px";
+                    if(bA1.style.left<="180px"){
+                        bA1.style.left="1040px";}
+                    bA2.style.left=bA2.offsetLeft-30+"px";
+                    if(bA2.style.left<="100px"){
+                        bA2.style.left="900px";}
+                    bA3.style.left=bA3.offsetLeft-80+"px";
+                    if(bA3.style.left>="900px"){
+                        bA3.style.left="400px";}
+                    bA4.style.left=bA4.offsetLeft-40+"px";
+                    if(bA4.style.left>="1000px"){
+                        bA4.style.left="640px";}
+                    bA5.style.left=bA5.offsetLeft-20+"px";
+                    if(bA5.style.left<="20px"){
+                        bA5.style.left="780px";}
+                    bA6.style.left=bA6.offsetLeft-10+"px";
+                    if(bA6.style.left<="70px"){
+                        bA6.style.left="920px";}
+                    break;
+                case 8:
+                case 9:
+                    bA.style.top=bA.offsetTop-40+"px";
+                    if(bA.style.top<="260px"){
+                        bA.style.top="400px";
+                    }
+                    bA1.style.top=bA1.offsetTop-90+"px";
+                    if(bA1.style.top<="100px"){
+                        bA1.style.top="580px";
+                    }
+                    bA2.style.top=bA2.offsetTop-20+"px";
+                    if(bA2.style.top>="500px"){
+                        bA2.style.top="420px";
+                    }
+                    bA3.style.top=bA3.offsetTop-10+"px";
+                    if(bA3.style.top<="500px"){
+                        bA3.style.top="580px";
+                    }
+                    bA4.style.top=bA4.offsetTop-40+"px";
+                    if(bA4.style.top>="540px"){
+                        bA4.style.top="500px";
+                    }
+                    bA5.style.top=bA5.offsetTop-20+"px";
+                    if(bA5.style.top>="580px"){
+                        bA5.style.top="500px";
+                    }
+                    bA6.style.top=bA6.offsetTop-30+"px";
+                    if(bA6.style.top>="500px"){
+                        bA6.style.top="300px";
+                    }
+            }
+        },100);
+        var oTop = document.getElementById("top");
+        oTop.onclick = function(){
+            var timer = setInterval(function(){
+                var iScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+                if(iScrollTop <= 0){
+                    clearInterval(timer);
+                }else{
+                    window.scrollTo(0, iScrollTop-=50);
+                }
+            }, 100);
+        };
+
+    </script>
 </header>
 <footer>
     <div>my personal website by Li Huimeng</div>
